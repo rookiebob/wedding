@@ -1,0 +1,20 @@
+<import src="../common/head.wxml" />
+<import src="../common/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: '婚礼地址：元立国际饭店'}}"/>
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <map
+              style="width: 375px; height: 300px;"
+              latitude="{{latitude}}"
+              longitude="{{longitude}}"
+              markers="{{markers}}"
+              covers="{{covers}}"
+      >
+      </map>
+    </view>
+  </view>
+
+  <template is="foot" />
+</view>
